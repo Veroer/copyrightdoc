@@ -1,6 +1,13 @@
 # 开发理由 #
 在申请软件著作权时,需要提供源代码打印件,如果手工编辑,控制出错,而且更新也不方便,所以就写了一个代码把这个工作变成一个命令
 
+### For Kotlin
+`$ php ./dist/copyrightdoc.phar -d ~/big-gateway/silent-majority-gateway/ -x /.git/ -x /tmp/ -x /vendors/ -e kt`
+
+### For Typescript and React
+`$ php ./dist/copyrightdoc.phar -d ~/big-gateway/silent-majority-gateway/ -x /.git/ -x /tmp/ -x /vendors/ -e tsx -e ts -e js`
+
+`['.js', '.jsx', '.json', '.ts', '.tsx']`
 # 快速使用 #
 先要确认已经安装了php程序
 
